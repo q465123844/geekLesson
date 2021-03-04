@@ -6,6 +6,7 @@ import com.leo.geektimes.projects.user.service.impl.UserServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
 /**
@@ -32,6 +33,7 @@ public class UserController {
      * @return
      */
 
+    @POST
     @Path("user/register")
     public String register(HttpServletRequest request){
         String page = "";
